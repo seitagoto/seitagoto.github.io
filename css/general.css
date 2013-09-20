@@ -37,6 +37,10 @@ a {
 	text-decoration: none;
 }
 
+figure {
+	margin: 0 0 1em 0;
+}
+
 @media only screen and (min-width: 28rem) {
 
 	body {
@@ -69,7 +73,9 @@ a {
 		width: 40rem;
 		padding: 0 0.5rem 0 0;
 
-		position: absolute;
+		margin-bottom: 0.5em;
+
+		position: static;
 		z-index: -1;
 	}
 
@@ -81,6 +87,8 @@ a {
 		margin-top: 0.75em;
 		line-height: 0.86em;
 		font-size: 10em;
+
+		position: static;
 	}
 
 }
@@ -128,6 +136,10 @@ a {
 	top: -0.075em;
 }
 
+.work {
+	width: 100%;
+}
+
 @media only screen and (min-width: 28rem) {
 
 	.column {
@@ -164,6 +176,8 @@ a {
 		top: -8em;
 		width: 50%;
 		padding: 0 0 0 0.5em;
+		margin-bottom: -6em;
+
 	}
 
 	.breakpoint1 {
@@ -181,10 +195,12 @@ a {
 	.column {
 		float: right;
 		width: 33%;
-		margin-top: 8em;
+		margin-top: -36.5em;
 		padding: 0 0 0 0.5em;
 
 		position: static;
+
+		margin-bottom: 6em;
 	}
 
 	.breakpoint1 {
@@ -195,12 +211,17 @@ a {
 		display: inline;
 	}
 
+	.work {
+		width: 66%;
+		padding-right: 0.5em;
+	}
+
 }
 
 @media only screen and (min-width: 64rem) {
 
 	.column {
-		margin-top: 15em;
+		margin-top: -40em;
 
 		position: static;
 	}

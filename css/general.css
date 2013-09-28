@@ -21,86 +21,52 @@ html {
 }
 
 body {
-	margin: 1em;
-	max-width: 64em;
+	margin: 2em 1em;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 36rem;
 }
 
 h1 {
-	font-size: 3em;
-	line-height: 1.2em;
+	font-size: 4em;
+	line-height: 1em;
 	color: #F02233;
-	margin: 2em 0 0 0;
+	margin: 0 0 1rem 0;
+	padding-bottom: 0.5rem;
 	font-family: 'bebas_neueregular', sans-serif;
+	border-bottom: solid 1px #000;
+}
+
+article {
+	margin: 1em 0;
+
 }
 
 a {
 	text-decoration: none;
+	color: #000;
+	font-weight: 700;
+}
+
+nav > a {
+	font-size: 1.5em;
+	margin-right: 2rem;
+}
+
+p {
+	margin-top: 0;
 }
 
 figure {
 	margin: 0 0 1em 0;
 }
 
-@media only screen and (min-width: 28rem) {
 
-	body {
-		margin: 1.5em;
-	}
-
-	h1 {
-		margin-top: 1em;
-		font-size: 5em;
-		line-height: 1em;
-	}
-
-}
-
-@media only screen and (min-width: 40rem) {
-
-	h1 {
-		font-size: 8em;
-	}
-
-	body {
-		margin: 0 5em 0 1.5em;
-	}
-
-}
-
-@media only screen and (min-width: 58rem) {
-
-	h1 {
-		width: 40rem;
-		padding: 0 0.5rem 0 0;
-
-		margin-bottom: 0.5em;
-
-		position: static;
-		z-index: -1;
-	}
-
-}
-
-@media only screen and (min-width: 64rem) {
-
-	h1 {
-		margin-top: 0.75em;
-		line-height: 0.86em;
-		font-size: 10em;
-
-		position: static;
-	}
-
-}
-
-@media only screen and (min-width: 100rem) {
-	html {
-		font-size: 1.5em;
-	}
-}
 
 .logo {
-	position: absolute;
+	position: relative;
 	top: -40px;
 	left: -60px;
 	z-index: -2;
@@ -119,18 +85,6 @@ figure {
 	color: #000;
 }
 
-.breakpoint1 {
-	display: none;
-}
-
-.breakpoint2 {
-	display: none;
-}
-
-.orphan {
-		display: none;
-	}
-
 .colon {
 	position: relative;
 	top: -0.075em;
@@ -140,94 +94,3 @@ figure {
 	width: 100%;
 }
 
-@media only screen and (min-width: 28rem) {
-
-	.column {
-		padding: 0 0.5em 0 0;
-		max-width: 60%;
-	}
-
-}
-
-@media only screen and (min-width: 40rem) {
-
-	.logo {
-		width: 300px;
-
-		top: -70px;
-		left: -90px;
-	}
-
-	.breakpoint1 {
-		display: none;
-	}
-
-	.breakpoint2 {
-		display: inline;
-	}
-
-}
-
-@media only screen and (min-width: 54rem) {
-
-	.column {
-		float: right;
-		position: relative;
-		top: -8em;
-		width: 50%;
-		padding: 0 0 0 0.5em;
-		margin-bottom: -6em;
-
-	}
-
-	.breakpoint1 {
-		display: inline;
-	}
-
-	.breakpoint2 {
-		display: none;
-	}
-
-}
-
-@media only screen and (min-width: 58rem) {
-
-	.column {
-		float: right;
-		width: 33%;
-		margin-top: -36.5em;
-		padding: 0 0 0 0.5em;
-
-		position: static;
-
-		margin-bottom: 6em;
-	}
-
-	.breakpoint1 {
-		display: none;
-	}
-
-	.breakpoint2 {
-		display: inline;
-	}
-
-	.work {
-		width: 66%;
-		padding-right: 0.5em;
-	}
-
-}
-
-@media only screen and (min-width: 64rem) {
-
-	.column {
-		margin-top: -40em;
-
-		position: static;
-	}
-
-	.orphan {
-		display: inline;
-	}
-
-}
